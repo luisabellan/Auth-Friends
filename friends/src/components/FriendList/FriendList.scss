@@ -135,29 +135,57 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.friends{
-  background-color:  #125558;
 
-  .title{
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
 
-    h1{
-      font-size: 2rem;
-      color: orange;
-    }
-
-  }
-
-  .spinner{
-    color: red;
-  }
-  .friend{
+  .friends{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    background-color:  #125558;
   
-  background-color:  #125558;
+    .title{
+      display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+  
+      h1{
+        display: flex;
+    justify-self: center;
+  
+        font-size: 2rem;
+        color: rgb(176, 230, 132);
+      }
+  
+    }
+  
+    .spinner{
+      color: red;
+    }
+    .friend{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+      justify-self: center;
     
-    p{
-      font-size: 1.5rem;
-      color: whitesmoke;
+    background-color:  #125558;
+      
+      p{
+        font-size: 1.5rem;
+        color: whitesmoke;
+      }
+    
     }
-  
   }
+  
 }
