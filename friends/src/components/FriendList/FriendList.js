@@ -59,6 +59,7 @@ class FriendsList extends React.Component {
         )}
         {friends.length > 0 && (
           <div className="friend">
+
             {friends.map(friend => (
               <div key={friend.id} className="one-friend">
                   <p>{friend.name}</p>
@@ -66,7 +67,13 @@ class FriendsList extends React.Component {
                   <p>email: {friend.email}</p>
               </div>
             ))}
+
+            
+
+
+
           </div>
+          
         )}
       </div>
     );
