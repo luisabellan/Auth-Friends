@@ -1,5 +1,5 @@
 import React from "react";
-
+import SendForm from '../SendForm/SendForm';
 import moment from "moment";
 
 import Loader from "react-loader-spinner";
@@ -59,6 +59,8 @@ class FriendsList extends React.Component {
         )}
         {friends.length > 0 && (
           <div className="friend">
+
+            <SendForm />
 
             {friends.map(friend => (
               <div key={friend.id} className="one-friend">
