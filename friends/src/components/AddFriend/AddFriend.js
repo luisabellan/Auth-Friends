@@ -1,28 +1,29 @@
 import React from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 
-import "./SendForm.css";
+import "./AddFriend.css";
 
-class SendForm extends React.Component {
+class AddFriend extends React.Component {
   state = {
     ...this.state,
     name: "",
     age: "",
     email: "",
-    
+
+
   };
 
   handleChange = e => {
     this.setState({
-      
-        ...this.state,
-        [e.target.name]: e.target.value
-      
+
+
+      [e.target.name]: e.target.value
+
     });
   };
 
   send = e => {
-   // e.preventDefault();
+
 
     // add in our login api call
     axiosWithAuth()
@@ -30,11 +31,8 @@ class SendForm extends React.Component {
       .then(res => {
         console.log(res);
         localStorage.setItem("token", res.data.payload);
-        // nice for UX, auto redirect to the main dash
-       // this.props.history.push("/friends"); 
-       //window.location.reload()
-      
-       
+
+
       })
       .catch(err => {
         console.log(err);
@@ -72,7 +70,7 @@ class SendForm extends React.Component {
           </div>
           <div className="email">
             <label>
-            email:
+              email:
               <input
                 type="email"
                 className="email"
@@ -92,4 +90,4 @@ class SendForm extends React.Component {
   }
 }
 
-export default SendForm;
+export default AddFriend;

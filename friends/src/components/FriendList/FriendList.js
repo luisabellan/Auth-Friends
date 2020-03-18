@@ -1,5 +1,5 @@
 import React from "react";
-import SendForm from '../SendForm/SendForm';
+import SendForm from '../AddFriend/AddFriend';
 import moment from "moment";
 
 import Loader from "react-loader-spinner";

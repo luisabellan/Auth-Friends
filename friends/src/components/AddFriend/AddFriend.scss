@@ -1,0 +1,62 @@
+.form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0 auto;
+
+  .name {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    label {
+      color: red;
+      font-size: 1.5rem;
+    }
+   
+  }
+  .age {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    label {
+      color: red;
+      font-size: 1.5rem;
+    }
+   
+  }
+  .email {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    label {
+      color: red;
+      font-size: 1.5rem;
+    }
+   
+  }
+  .button{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+}
