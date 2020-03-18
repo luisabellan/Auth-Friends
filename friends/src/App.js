@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link,NavLink, Switch } from "react-router-dom";
 
 import Login from "./components/Login/Login";
 import FriendsList from "./components/FriendList/FriendList";
@@ -15,10 +15,10 @@ function App() {
         <nav>
         <ul>
           <li>
-            <Link to="/login">Login</Link>
+            <NavLink to="/login"><span>Login</span></NavLink>
           </li>
           <li>
-            <Link to="/friends">Friends</Link>
+            <NavLink to="/friends"><span>Friends</span></NavLink>
           </li>
         </ul>
         <Switch>

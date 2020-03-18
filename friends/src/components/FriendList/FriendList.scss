@@ -136,56 +136,57 @@ table {
   border-spacing: 0;
 }
 
-.container{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  justify-self: center;
 
-  .friends{
-    display:flex;
+
+  .friends {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     justify-self: center;
-    background-color:  #125558;
-  
-    .title{
-      display:flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-  
-      h1{
+    background-color: #125558;
+
+    .title {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+
+      h1 {
         display: flex;
-    justify-self: center;
-  
+        text-align: justify;
         font-size: 2rem;
         color: rgb(176, 230, 132);
+        justify-self: center;
       }
-  
     }
-  
-    .spinner{
+
+    .spinner {
       color: red;
     }
-    .friend{
-      display:flex;
+    .friend {
+      display: flex;
       flex-direction: column;
       justify-content: center;
       justify-items: center;
       justify-self: center;
-    
-    background-color:  #125558;
-      
-      p{
-        font-size: 1.5rem;
-        color: whitesmoke;
+
+      background-color: #8e8fa8;
+
+      .one-friend {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        margin: 2rem auto;
+
+          p {
+            
+            justify-self: center;
+            margin: 0 auto;
+            font-size: 1.5rem;
+            color: rgb(34, 73, 27);
+          }
+        
       }
-    
     }
   }
-  
-}

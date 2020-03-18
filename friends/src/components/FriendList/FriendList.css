@@ -130,22 +130,7 @@ table {
   border-spacing: 0;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-items: center;
-  justify-self: center;
-}
-
-.container .friends {
+.friends {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,35 +146,31 @@ table {
   background-color: #125558;
 }
 
-.container .friends .title {
+.friends .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  justify-self: center;
 }
 
-.container .friends .title h1 {
+.friends .title h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-self: center;
+  text-align: justify;
   font-size: 2rem;
   color: #b0e684;
+  justify-self: center;
 }
 
-.container .friends .spinner {
+.friends .spinner {
   color: red;
 }
 
-.container .friends .friend {
+.friends .friend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,11 +183,29 @@ table {
           justify-content: center;
   justify-items: center;
   justify-self: center;
-  background-color: #125558;
+  background-color: #8e8fa8;
 }
 
-.container .friends .friend p {
+.friends .friend .one-friend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  margin: 2rem auto;
+}
+
+.friends .friend .one-friend p {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 0 auto;
   font-size: 1.5rem;
-  color: whitesmoke;
+  color: #22491b;
 }
 /*# sourceMappingURL=FriendList.css.map */
