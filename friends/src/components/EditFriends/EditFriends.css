@@ -35,6 +35,12 @@
   font-size: 1.5rem;
 }
 
+.form .name input {
+  font-size: 1.4rem;
+  color: #5615a0;
+  padding: 0.5rem;
+}
+
 .form .age {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,6 +62,12 @@
   font-size: 1.5rem;
 }
 
+.form .age input {
+  font-size: 1.4rem;
+  color: #5615a0;
+  padding: 0.5rem;
+}
+
 .form .email {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,6 +87,12 @@
 .form .email label {
   color: #5615a0;
   font-size: 1.5rem;
+}
+
+.form .email input {
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  color: #5615a0;
 }
 
 .form .button {

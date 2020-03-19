@@ -175,6 +175,8 @@ div.form {
         
       input.username {
         margin: 1rem 0 1rem 1rem;
+        font-size: 1.4rem;
+        color: rgb(86, 21, 160);
       }
     }
     div.password {
@@ -183,6 +185,8 @@ div.form {
         justify-self: center;
       input.password {
         margin: 1rem 0 1rem 1rem;
+        font-size: 1.4rem;
+        color: rgb(86, 21, 160);
 
       }
     }
@@ -197,8 +201,9 @@ div.form {
         justify-self: center;
         width: 6rem;
         height: 2rem;
-        background-color: rgb(86, 21, 160);;
+        background-color: rgb(86, 21, 160);
         color: whitesmoke;
+        border: rgb(86, 21, 160);
       }
     }
   }

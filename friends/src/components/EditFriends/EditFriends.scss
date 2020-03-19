@@ -19,6 +19,11 @@
       color: rgb(86, 21, 160);
       font-size: 1.5rem;
     }
+    input{
+      font-size: 1.4rem;
+        color: rgb(86, 21, 160);
+        padding: 0.5rem;
+    }
    
   }
   .age {
@@ -33,6 +38,11 @@
       color: rgb(86, 21, 160);
       font-size: 1.5rem;
     }
+    input{
+      font-size: 1.4rem;
+        color: rgb(86, 21, 160);
+        padding: 0.5rem;
+    }
    
   }
   .email {
@@ -44,8 +54,14 @@
     justify-self: center;
     margin: 0 auto;
     label {
+     
       color: rgb(86, 21, 160);
       font-size: 1.5rem;
+    }
+    input{
+      padding: 0.5rem;
+      font-size: 1.4rem;
+        color: rgb(86, 21, 160);
     }
    
   }

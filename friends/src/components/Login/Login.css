@@ -189,6 +189,8 @@ div.form form div.username {
 
 div.form form div.username input.username {
   margin: 1rem 0 1rem 1rem;
+  font-size: 1.4rem;
+  color: #5615a0;
 }
 
 div.form form div.password {
@@ -203,6 +205,8 @@ div.form form div.password {
 
 div.form form div.password input.password {
   margin: 1rem 0 1rem 1rem;
+  font-size: 1.4rem;
+  color: #5615a0;
 }
 
 div.form form div.button {
@@ -226,5 +230,6 @@ div.form form div.button button {
   height: 2rem;
   background-color: #5615a0;
   color: whitesmoke;
+  border: #5615a0;
 }
 /*# sourceMappingURL=Login.css.map */
