@@ -7,6 +7,7 @@ import EditFriends from '../EditFriends/EditFriends';
 
 class FriendsList extends React.Component {
   state = {
+   
     friends: []
   };
 
