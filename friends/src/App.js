@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, NavLink, Switch } from "react-router-dom";
 
 import Login from "./components/Login/Login";
-import FriendsList from "./components/FriendList/FriendList";
+import FriendsList from "./components/FriendsList/FriendsList";
 import PrivateRoute from "./components/PrivateRoute";
 
 import "./App.css";

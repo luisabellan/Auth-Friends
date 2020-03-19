@@ -2,7 +2,7 @@ import React from "react";
 
 import Loader from "react-loader-spinner";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
-import "./FriendList.css";
+import "./FriendsList.css";
 import EditFriends from '../EditFriends/EditFriends';
 
 class FriendsList extends React.Component {
@@ -56,16 +56,19 @@ class FriendsList extends React.Component {
             <p>Loading Data...</p>
           </div>
         )}
+<EditFriends />
+
         {friends.length > 0 && (
           <div className="friend">
 
-            <EditFriends />
+            
 
             {friends.map(friend => (
               <div key={friend.id} className="one-friend">
                   <p>{friend.name}</p>
                   <p>age: {friend.age}</p>
                   <p>email: {friend.email}</p>
+                  <p>id: {friend.id}</p>
               </div>
             ))}
 

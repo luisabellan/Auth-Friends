@@ -149,13 +149,30 @@ div.form {
     flex-direction: column;
     justify-content: center;
     justify-items: center;
+    border: 2px solid dodgerblue;
+    width: 30rem;
+    margin: 0 auto;
+    padding: 1rem;
     margin-top: 3rem;
+    label{
+      font-size: 1.6rem;
+      color: dodgerblue;
+    }
+    input{
+      border: 2px solid dodgerblue;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+   
+      height: 2rem;
+    }
 
 
     div.username {
       display: flex;
         justify-content: center;
         justify-self: center;
+        
       input.username {
         margin: 1rem 0 1rem 1rem;
       }
@@ -180,6 +197,8 @@ div.form {
         justify-self: center;
         width: 6rem;
         height: 2rem;
+        background-color: dodgerblue;
+        color: whitesmoke;
       }
     }
   }
