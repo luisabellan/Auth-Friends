@@ -5,10 +5,13 @@ import "./EditFriends.css";
 
 const EditFriends = (props) => {
   const [friend, setFriend] = useState({
+    
     name: "",
     age: "",
     email: "",
     id: props.id,
+    
+    
   });
 
   const handleChange = e => {
@@ -36,12 +39,12 @@ const EditFriends = (props) => {
   };
 
   const deleteFriend = (e) => {
-    e.preventDefault()
+    //e.preventDefault()
     console.log("deleteFriend")
 
     // add in our login api call
     axiosWithAuth()
-      .post("/friends/:id", friend.id)
+      .post("/friends/:id", friend)
       .then(res => {
         console.log(res);
 
@@ -105,7 +108,6 @@ const EditFriends = (props) => {
           onSubmit={deleteFriend} /* formAction={this.option} value="form" */
         >
           <div className="name">
-          <h2>Input the id for the user you would like to delete</h2>
 
             <label>
               id:

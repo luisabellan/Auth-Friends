@@ -56,12 +56,12 @@ class FriendsList extends React.Component {
             <p>Loading Data...</p>
           </div>
         )}
-<EditFriends />
+
 
         {friends.length > 0 && (
           <div className="friend">
 
-            
+            <EditFriends />
 
             {friends.map(friend => (
               <div key={friend.id} className="one-friend">
