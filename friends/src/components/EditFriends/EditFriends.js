@@ -1,43 +1,37 @@
-import React from "react";
+import React, {useState} from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 
 import "./EditFriends.css";
 
-class EditFriends extends React.Component {
-  state = {
-    ...this.state,
+function EditFriends ()  {
+  const [friend, setFriend] = useState({
+    
+    
     name: "",
     age: "",
     email: "",
+  })
 
 
-  };
 
-  option = (e) => {
-    e.preventDefault()
-    console.log(e);
-
-    /* if(e.target === e.target){
-
-    } */
-  }
-  handleChange = e => {
+ 
+  const handleChange = e => {
     
-    this.setState({
+    setFriend({
 
-
+      ...friend,
       [e.target.name]: e.target.value
       
     });
   };
 
-  add = e => {
-    console.log(e);
+ const add = e => {
+    //console.log(e);
     //e.preventDefault()
 
     // add in our login api call
     axiosWithAuth()
-      .post("/friends", this.state)
+      .post("/friends", friend)
       .then(res => {
         console.log(res);
         
@@ -50,10 +44,10 @@ class EditFriends extends React.Component {
       });
   };
 
-  render() {
+  
     return (
       <div className="form">
-        <form onSubmit={this.add}   /* formAction={this.option} value="form" */ >
+        <form onSubmit={add}   /* formAction={this.option} value="form" */ >
           <div className="name">
             <label>
               username:
@@ -61,8 +55,8 @@ class EditFriends extends React.Component {
                 type="text"
                 className="name"
                 name="name"
-                value={this.state.name}
-                onChange={this.handleChange}
+                value={friend.name}
+                onChange={handleChange}
               />
             </label>
           </div>
@@ -74,8 +68,8 @@ class EditFriends extends React.Component {
                 type="text"
                 className="age"
                 name="age"
-                value={this.state.age}
-                onChange={this.handleChange}
+                value={friend.age}
+                onChange={handleChange}
               />
             </label>
           </div>
@@ -86,20 +80,20 @@ class EditFriends extends React.Component {
                 type="email"
                 className="email"
                 name="email"
-                value={this.state.email}
-                onChange={this.handleChange}
+                value={friend.email}
+                onChange={handleChange}
               />
             </label>
           </div>
 
           <div className="button">
-            <button /* type="submit"  value="Add" */>Add</button>  
-            <button /* type="submit"  formAction = {this.option}  */>Delete</button>   
+            <button>Add</button>  
+            <button>Delete</button>  
           </div>
         </form>
       </div>
     );
   }
-}
+
 
 export default EditFriends;

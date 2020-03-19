@@ -1,52 +1,50 @@
-import React from "react";
+import React, {useState} from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 
 import './Login.css'
 
-class Login extends React.Component {
-  state = {
-    credentials: {
-      username: "",
-      password: ""
-    }
-  };
+const Login = (props) => {
 
-  handleChange = e => {
-    this.setState({
-      credentials: {
-        ...this.state.credentials,
-        [e.target.name]: e.target.value
-      }
-    });
-  };
+  const [credentials, setCredentials] = useState({})
 
-  login = e => {
+
+
+  
+  const login = e => {
     e.preventDefault();
-
+    
     // add in our login api call
     axiosWithAuth()
-      .post("/login", this.state.credentials)
-      .then(res => {
-        console.log(res);
-        localStorage.setItem("token", res.data.payload);
-        // nice for UX, auto redirect to the main dash
-        this.props.history.push("/friends");
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    .post("/login", credentials)
+    .then(res => {
+      console.log(res);
+      localStorage.setItem("token", res.data.payload);
+      // nice for UX, auto redirect to the main dash
+      props.history.push("/friends");
+    })
+    .catch(err => {
+      console.log(err);
+    });
   };
-
-  render() {
+  
+  const handleChange = e => {
+    setCredentials({
+  
+        ...credentials,
+        [e.target.name]: e.target.value,
+      
+    });
+  };
+  
     return (
       <div className="form">
-        <form onSubmit={this.login}>
+        <form onSubmit={login}>
           <div className="username"><label>username:<input
             type="text"
             className="username"
             name="username"
-            value={this.state.credentials.username}
-            onChange={this.handleChange}
+            value={credentials.username}
+            onChange={handleChange}
           /></label></div>
 
           <div className="password">
@@ -56,8 +54,8 @@ class Login extends React.Component {
                 className="password"
 
                 name="password"
-                value={this.state.credentials.password}
-                onChange={this.handleChange}
+                value={credentials.password}
+                onChange={handleChange}
               />
             </label>
           </div>
@@ -73,6 +71,6 @@ class Login extends React.Component {
       </div>
     );
   }
-}
+
 
 export default Login;
