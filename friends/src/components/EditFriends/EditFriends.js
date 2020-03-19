@@ -9,7 +9,7 @@ const EditFriends = (props) => {
     name: "",
     age: "",
     email: "",
-    id: props.id,
+    
     
     
   });
@@ -55,7 +55,7 @@ const EditFriends = (props) => {
   };
 
   return (
-    <div className="forms">
+  
       <div className="form">
         <form onSubmit={add}>
           <div className="name">
@@ -102,30 +102,7 @@ const EditFriends = (props) => {
         </form>
       </div>
 
-      <div className="form">
-        <form
-          onSubmit={deleteFriend} /* formAction={this.option} value="form" */
-        >
-          <div className="name">
-
-            <label>
-              id:
-              <input
-                type="text"
-                className="name"
-                name="id"
-                value={friend.id}
-                onChange={handleChange}
-              />
-            </label>
-          </div>
-
-          <div className="button">
-            <button>Delete</button>
-          </div>
-        </form>
-      </div>
-    </div>
+   
   );
 };
 
