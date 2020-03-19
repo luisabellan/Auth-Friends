@@ -1,9 +1,9 @@
 import React from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 
-import "./AddFriend.css";
+import "./EditFriends.css";
 
-class AddFriend extends React.Component {
+class EditFriends extends React.Component {
   state = {
     ...this.state,
     name: "",
@@ -13,23 +13,34 @@ class AddFriend extends React.Component {
 
   };
 
+  option = (e) => {
+    e.preventDefault()
+    console.log(e);
+
+    /* if(e.target === e.target){
+
+    } */
+  }
   handleChange = e => {
+    
     this.setState({
 
 
       [e.target.name]: e.target.value
-
+      
     });
   };
 
-  send = e => {
-
+  add = e => {
+    console.log(e);
+    //e.preventDefault()
 
     // add in our login api call
     axiosWithAuth()
       .post("/friends", this.state)
       .then(res => {
         console.log(res);
+        
         localStorage.setItem("token", res.data.payload);
 
 
@@ -42,7 +53,7 @@ class AddFriend extends React.Component {
   render() {
     return (
       <div className="form">
-        <form onSubmit={this.send}>
+        <form onSubmit={this.add}   /* formAction={this.option} value="form" */ >
           <div className="name">
             <label>
               username:
@@ -82,7 +93,8 @@ class AddFriend extends React.Component {
           </div>
 
           <div className="button">
-            <button>Send</button>
+            <button /* type="submit"  value="Add" */>Add</button>  
+            <button /* type="submit"  formAction = {this.option}  */>Delete</button>   
           </div>
         </form>
       </div>
@@ -90,4 +102,4 @@ class AddFriend extends React.Component {
   }
 }
 
-export default AddFriend;
+export default EditFriends;

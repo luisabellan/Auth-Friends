@@ -1,10 +1,9 @@
 import React from "react";
-import SendForm from '../AddFriend/AddFriend';
-import moment from "moment";
 
 import Loader from "react-loader-spinner";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import "./FriendList.css";
+import EditFriends from '../EditFriends/EditFriends';
 
 class FriendsList extends React.Component {
   state = {
@@ -60,7 +59,7 @@ class FriendsList extends React.Component {
         {friends.length > 0 && (
           <div className="friend">
 
-            <SendForm />
+            <EditFriends />
 
             {friends.map(friend => (
               <div key={friend.id} className="one-friend">
