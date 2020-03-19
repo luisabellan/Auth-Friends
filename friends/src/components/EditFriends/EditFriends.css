@@ -37,7 +37,8 @@
 
 .form .name input {
   font-size: 1.4rem;
-  color: #5615a0;
+  color: #b196cf;
+  background-color: #5615a0;
   padding: 0.5rem;
 }
 
@@ -64,7 +65,8 @@
 
 .form .age input {
   font-size: 1.4rem;
-  color: #5615a0;
+  color: #b196cf;
+  background-color: #5615a0;
   padding: 0.5rem;
 }
 
@@ -92,23 +94,32 @@
 .form .email input {
   padding: 0.5rem;
   font-size: 1.4rem;
-  color: #5615a0;
+  color: #b196cf;
+  background-color: #5615a0;
 }
 
-.form .button {
+.form div.button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  justify-items: center;
+  margin-top: 2rem;
+}
+
+.form div.button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   justify-self: center;
-  margin: 0 auto;
-  margin-top: 1rem;
+  width: 6rem;
+  height: 2rem;
+  background-color: #5615a0;
+  color: whitesmoke;
+  border: #5615a0;
 }
 /*# sourceMappingURL=EditFriends.css.map */
