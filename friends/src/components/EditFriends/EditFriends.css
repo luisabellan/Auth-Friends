@@ -31,7 +31,7 @@
 }
 
 .form .name label {
-  color: red;
+  color: #5615a0;
   font-size: 1.5rem;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .form .age label {
-  color: red;
+  color: #5615a0;
   font-size: 1.5rem;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .form .email label {
-  color: red;
+  color: #5615a0;
   font-size: 1.5rem;
 }
 

@@ -166,11 +166,11 @@ div.form form {
 
 div.form form label {
   font-size: 1.6rem;
-  color: dodgerblue;
+  color: #5615a0;
 }
 
 div.form form input {
-  border: 2px solid dodgerblue;
+  border: 2px solid #5615a0;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -224,7 +224,7 @@ div.form form div.button button {
   justify-self: center;
   width: 6rem;
   height: 2rem;
-  background-color: dodgerblue;
+  background-color: #5615a0;
   color: whitesmoke;
 }
 /*# sourceMappingURL=Login.css.map */
