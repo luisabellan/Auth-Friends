@@ -66,7 +66,7 @@ class FriendsList extends React.Component {
         <div className="title">
           <h1>Friends</h1>
         </div>
-        {this.props.isLoading && (
+        {!this.props.isLoading && (
           <div className="spinner">
             <Loader type="Puff" color="#204963" height="60" width="60" />
             <p>Loading Data...</p>
