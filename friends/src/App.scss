@@ -22,6 +22,11 @@ html {
             list-style: none;
             margin-left: 2rem;
             text-decoration: none;
+            .saved-active {
+              color: blue;
+              border: 1px solid grey;
+              padding: 5px;
+            }
             span{
               font-size: 1.5rem;
             }

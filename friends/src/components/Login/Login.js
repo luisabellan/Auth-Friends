@@ -6,7 +6,7 @@ import './Login.css'
 const Login = (props) => {
 
   const [credentials, setCredentials] = useState({})
-  const[isLoading, setIsLoading] = useState(false)
+  const[isLoading, setIsLoading] = useState(true)
 
 
 

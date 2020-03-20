@@ -6,6 +6,9 @@ import "./FriendsList.css";
 import EditFriends from '../EditFriends/EditFriends';
 
 class FriendsList extends React.Component {
+  constructor(props){
+    super()
+  }
   state = {
 
     friends: []
@@ -13,6 +16,7 @@ class FriendsList extends React.Component {
 
   componentDidMount() {
     this.getData();
+    console.log(props)
   }
 
   getData = () => {

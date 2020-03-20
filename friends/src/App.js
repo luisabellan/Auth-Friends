@@ -18,7 +18,7 @@ function App() {
         <nav>
         <ul>
           <li>
-            <NavLink to="/login"><span>Login</span></NavLink>
+            <NavLink to="/login" activeClassName=""><span>Login</span></NavLink>
           </li>
           <li>
             <NavLink to="/friends"><span>Friends</span></NavLink>
