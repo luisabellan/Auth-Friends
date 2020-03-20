@@ -208,4 +208,29 @@ table {
   font-size: 1.5rem;
   color: #5615a0;
 }
+
+.friends .friend .one-friend div.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.friends .friend .one-friend div.button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  width: 6rem;
+  height: 2rem;
+  background-color: #5615a0;
+  color: whitesmoke;
+  border: #5615a0;
+}
 /*# sourceMappingURL=FriendsList.css.map */
