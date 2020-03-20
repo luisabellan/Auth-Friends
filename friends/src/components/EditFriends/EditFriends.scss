@@ -1,0 +1,87 @@
+.form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0 auto;
+
+  .name {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    label {
+      color: rgb(86, 21, 160);
+      font-size: 1.5rem;
+    }
+    input{
+      font-size: 1.4rem;
+        color: rgb(177, 150, 207);
+        background-color:  rgb(86, 21, 160);
+        padding: 0.5rem;
+    }
+   
+  }
+  .age {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    label {
+      color: rgb(86, 21, 160);
+      font-size: 1.5rem;
+    }
+    input{
+      font-size: 1.4rem;
+      color: rgb(177, 150, 207);
+      background-color:  rgb(86, 21, 160);
+        padding: 0.5rem;
+    }
+   
+  }
+  .email {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    label {
+     
+      color: rgb(86, 21, 160);
+      font-size: 1.5rem;
+    }
+    input{
+      padding: 0.5rem;
+      font-size: 1.4rem;
+      color: rgb(177, 150, 207);
+      background-color:  rgb(86, 21, 160);
+    }
+   
+  }
+  div.button{
+    display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+
+    button{
+      display: flex;
+      justify-content: center;
+      justify-self: center;
+      width: 6rem;
+      height: 2rem;
+      background-color: rgb(86, 21, 160);
+      color: whitesmoke;
+      border: rgb(86, 21, 160);
+    }
+  }
+}

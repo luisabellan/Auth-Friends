@@ -136,75 +136,75 @@ table {
   border-spacing: 0;
 }
 
-div.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
 
-  margin: 1rem 0;
 
-  form {
+  .friends {
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    border: 2px solid rgb(152, 119, 204);
-    width: 30rem;
-    margin: 0 auto;
-    padding: 1rem;
-    margin-top: 3rem;
-    label{
-      font-size: 1.6rem;
-      color: rgb(86, 21, 160);
-    }
-    input{
-      border: 2px solid rgb(86, 21, 160);
-      border-top: none;
-      border-right: none;
-      border-left: none;
-   
-      height: 2rem;
-    }
+    justify-self: center;
+    background-color: #125558;
 
-
-    div.username {
+    .title {
       display: flex;
-        justify-content: center;
+      justify-content: center;
+      justify-items: center;
+
+      h1 {
+        display: flex;
+        text-align: justify;
+        font-size: 2rem;
+        color: rgb(176, 230, 132);
         justify-self: center;
         
-      input.username {
-        margin: 1rem 0 1rem 1rem;
-        font-size: 1.4rem;
-        color: rgb(86, 21, 160);
-      }
-    }
-    div.password {
-      display: flex;
-        justify-content: center;
-        justify-self: center;
-      input.password {
-        margin: 1rem 0 1rem 1rem;
-        font-size: 1.4rem;
-        color: rgb(86, 21, 160);
-
       }
     }
 
-    div.button{
+    .spinner {
+      color: rgb(140, 93, 194);
+    }
+    .friend {
       display: flex;
-        justify-content: center;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+      justify-self: center;
 
-      button{
+      background-color: #8e8fa8;
+
+      .one-friend {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        justify-self: center;
-        width: 6rem;
-        height: 2rem;
-        background-color: rgb(86, 21, 160);
-        color: whitesmoke;
-        border: rgb(86, 21, 160);
-      }
+        justify-items: center;
+        margin: 2rem auto;
+
+          p {
+            
+            justify-self: center;
+            margin: 0 auto;
+            font-size: 1.5rem;
+            color: rgb(86, 21, 160);
+          }
+      div.button{
+    display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+
+    button{
+      display: flex;
+      justify-content: center;
+      justify-self: center;
+      width: 6rem;
+      height: 2rem;
+      background-color: rgb(86, 21, 160);
+      color: whitesmoke;
+      border: rgb(86, 21, 160);
     }
+  }
+      
+    }
+   
   }
 }

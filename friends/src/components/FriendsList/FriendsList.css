@@ -130,7 +130,7 @@ table {
   border-spacing: 0;
 }
 
-div.form {
+.friends {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,10 +142,35 @@ div.form {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  margin: 1rem 0;
+  justify-self: center;
+  background-color: #125558;
 }
 
-div.form form {
+.friends .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.friends .title h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+  font-size: 2rem;
+  color: #b0e684;
+  justify-self: center;
+}
+
+.friends .spinner {
+  color: #8c5dc2;
+}
+
+.friends .friend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,79 +182,30 @@ div.form form {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: center;
-  border: 2px solid #9877cc;
-  width: 30rem;
+  justify-self: center;
+  background-color: #8e8fa8;
+}
+
+.friends .friend .one-friend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  margin: 2rem auto;
+}
+
+.friends .friend .one-friend p {
+  -ms-grid-column-align: center;
+      justify-self: center;
   margin: 0 auto;
-  padding: 1rem;
-  margin-top: 3rem;
-}
-
-div.form form label {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #5615a0;
 }
-
-div.form form input {
-  border: 2px solid #5615a0;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  height: 2rem;
-}
-
-div.form form div.username {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-self: center;
-}
-
-div.form form div.username input.username {
-  margin: 1rem 0 1rem 1rem;
-  font-size: 1.4rem;
-  color: #5615a0;
-}
-
-div.form form div.password {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-self: center;
-}
-
-div.form form div.password input.password {
-  margin: 1rem 0 1rem 1rem;
-  font-size: 1.4rem;
-  color: #5615a0;
-}
-
-div.form form div.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-div.form form div.button button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  justify-self: center;
-  width: 6rem;
-  height: 2rem;
-  background-color: #5615a0;
-  color: whitesmoke;
-  border: #5615a0;
-}
-/*# sourceMappingURL=Login.css.map */
+/*# sourceMappingURL=FriendsList.css.map */

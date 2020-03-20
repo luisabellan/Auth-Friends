@@ -1,15 +1,14 @@
 import React from "react";
 
-import moment from "moment";
-
 import Loader from "react-loader-spinner";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
-import './FriendList.css'
+import "./FriendsList.css";
+import EditFriends from '../EditFriends/EditFriends';
 
 class FriendsList extends React.Component {
   state = {
-    friends: [],
-    
+
+    friends: []
   };
 
   componentDidMount() {
@@ -34,16 +33,29 @@ class FriendsList extends React.Component {
     const formattedData = [];
     console.log(this.state.friends);
     this.state.friends.forEach((friend, index, arr) => {
-     
-        formattedData.push({
-          id: friend.id,
-          name: friend.name,
-          age: friend.age,
-          email: friend.email
-        });
-      
+      formattedData.push({
+        id: friend.id,
+        name: friend.name,
+        age: friend.age,
+        email: friend.email
+      });
     });
     return formattedData;
+  };
+
+  deleteFriend = (e, id) => {
+    e.preventDefault()
+    console.log("deleteFriend")
+
+    // add in our login api call
+    axiosWithAuth()
+      .delete(`/friends/${id}`, this.friend)
+      .then(res => {
+        console.log(res);
+      })
+      .catch(err => {
+        console.log(err);
+      });
   };
 
   render() {
@@ -51,32 +63,34 @@ class FriendsList extends React.Component {
     console.log(friends);
     return (
       <div className="friends">
-      
         <div className="title">
-         <h1>Friends</h1>
+          <h1>Friends</h1>
         </div>
-        {this.props.fetchingData && (
+        {!this.props.isLoading && (
           <div className="spinner">
             <Loader type="Puff" color="#204963" height="60" width="60" />
             <p>Loading Data...</p>
           </div>
         )}
-        {friends.length > 0 && (
-          
-            
-           
-              <div>
-                {friends.map(friend => (
-                  <div key={friend.id} className="friend">
 
-                    <p>name: {friend.name}</p>
-                    <p>age: {friend.age}</p>
-                    <p>email: {friend.email}</p>
-                    
-                      
+        {friends.length > 0 && (
+          <div className="friend">
+            <EditFriends />
+
+            {friends.map(friend => (
+              <div key={friend.id} className="one-friend">
+                <p>{friend.name}</p>
+                <p>age: {friend.age}</p>
+                <p>email: {friend.email}</p>
+                <p>id: {friend.id}</p>
+                <form onSubmit={this.deleteFriend}>
+                  <div className="button">
+                    <button value="Delete">Delete</button>
                   </div>
-                ))}
+                </form>
               </div>
+            ))}
+          </div>
         )}
       </div>
     );

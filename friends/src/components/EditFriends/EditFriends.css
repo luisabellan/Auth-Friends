@@ -1,0 +1,125 @@
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  margin: 0 auto;
+}
+
+.form .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  margin: 0 auto;
+}
+
+.form .name label {
+  color: #5615a0;
+  font-size: 1.5rem;
+}
+
+.form .name input {
+  font-size: 1.4rem;
+  color: #b196cf;
+  background-color: #5615a0;
+  padding: 0.5rem;
+}
+
+.form .age {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  margin: 0 auto;
+}
+
+.form .age label {
+  color: #5615a0;
+  font-size: 1.5rem;
+}
+
+.form .age input {
+  font-size: 1.4rem;
+  color: #b196cf;
+  background-color: #5615a0;
+  padding: 0.5rem;
+}
+
+.form .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  margin: 0 auto;
+}
+
+.form .email label {
+  color: #5615a0;
+  font-size: 1.5rem;
+}
+
+.form .email input {
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  color: #b196cf;
+  background-color: #5615a0;
+}
+
+.form div.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.form div.button button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  width: 6rem;
+  height: 2rem;
+  background-color: #5615a0;
+  color: whitesmoke;
+  border: #5615a0;
+}
+/*# sourceMappingURL=EditFriends.css.map */
